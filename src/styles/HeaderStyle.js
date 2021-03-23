@@ -10,9 +10,10 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   top: 0;
   z-index: 1;
-  box-shadow: ${(props) =>
-    props.isBackground ? "#ffffff" : "rgba(0, 0, 0, 0.08) 0px 1px 12px"};
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
+  background: ${(props) => (props.isBackground ? "#ffffff" : "transparent")};
   box-sizing: border-box;
+  transition: all 1s ;
 
   .logo {
     margin-left: 20rem;
@@ -57,7 +58,7 @@ export const HeaderWrapper = styled.div`
       flex-direction: row;
       align-items: center;
       width: 18%;
-      transition: all 1s;
+      transition: all 1s ease-in;
 
       &--input {
         padding: 0.8rem;

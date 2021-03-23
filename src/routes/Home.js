@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
+import KeepTouch from "../components/KeepTouch";
+import Footer from "../components/Footer";
 import { HomeWrapper } from "../styles/HomeStyle";
 
 class Home extends Component {
@@ -12,7 +14,7 @@ class Home extends Component {
   }
   componentDidMount() {
     window.onscroll = () => {
-      if (document.documentElement.scrollTop > 180) {
+      if (document.documentElement.scrollTop > 100) {
         this.setState({ isBackground: true });
       } else {
         this.setState({ isBackground: false });
@@ -25,6 +27,8 @@ class Home extends Component {
       <HomeWrapper>
         <Header isBackground={isBackground} />
         <Banner />
+        <KeepTouch />
+        <Footer />
       </HomeWrapper>
     );
   }
