@@ -16,7 +16,7 @@ export const HeaderWrapper = styled.div`
   transition: all 1s ;
 
   .logo {
-    margin-left: 20rem;
+    margin-left: 8rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,7 +45,7 @@ export const HeaderWrapper = styled.div`
   }
 
   .inputCart {
-    margin-right: 20rem;
+    margin-right: 8rem;
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import KeepTouch from "../components/KeepTouch";
 import Footer from "../components/Footer";
+import FeaturedBrand from "./../components/featuredBrand";
+import Product from "./../components/product";
 import { HomeWrapper } from "../styles/HomeStyle";
 
 class Home extends Component {
@@ -27,6 +29,8 @@ class Home extends Component {
       <HomeWrapper>
         <Header isBackground={isBackground} />
         <Banner />
+        <FeaturedBrand />
+        <Product />
         <KeepTouch />
         <Footer />
       </HomeWrapper>
