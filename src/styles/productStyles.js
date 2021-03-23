@@ -6,8 +6,8 @@ export const ProductWrapper = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
   flex-direction: column;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
   text-align: center;
   align-items: center;
   justify-content: flex-start;
@@ -18,14 +18,15 @@ export const ProductWrapper = styled.div`
     display: flex;
     flex-wrap: nowrap;
     &-image-container {
+      width: 100%;
       display: flex;
-      flex: 0 0 50%;
-      flex-wrap: wrap;
-      height: auto;
+      flex-direction:column;
+      /* flex: 0 0 50%; */
+      /* flex-wrap: wrap; */
       background-color: aliceblue;
       &-top {
         img {
-          width: 40rem;
+          width: 100%;
           height: 20rem;
           object-fit: cover;
           transition: transform 1s ease-in-out;
@@ -35,13 +36,16 @@ export const ProductWrapper = styled.div`
         }
       }
       &-bottom {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
         img {
           width: 15rem;
           height: 20rem;
           object-fit: cover;
-          padding-left: 2rem;
-          padding-right: 2rem;
-          padding-top: 3rem;
+          /* padding-left: 1rem;
+          padding-right: 1rem; */
+          padding-top: 2rem;
           transition: transform 1s ease-in-out;
           :hover {
             transform: scale(1.05);

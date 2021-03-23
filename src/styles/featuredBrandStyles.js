@@ -34,15 +34,19 @@ export const BrandWrapper = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom:0;
+    margin-bottom: 2rem;
+    background: ${(props) => (props.istheme1 ? "#eaa0a2" : "#ffffff")};
 
     .brand-background {
       flex: 0 0 25%;
-      background-color: #fff;
+      background-color: transparent;
       height: auto;
       margin-bottom: 4rem;
       position: relative;
+
       img {
         width: 17rem;
         height: 17rem;
@@ -52,6 +56,7 @@ export const BrandWrapper = styled.div`
         border-top-right-radius: 0.5rem;
         object-fit: cover;
         opacity: 0.9;
+        transition: all 0.8s;
         cursor: pointer;
         :hover {
           opacity: 1;

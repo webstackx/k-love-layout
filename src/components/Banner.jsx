@@ -31,6 +31,8 @@ class Banner extends Component {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      speed: 1000,
     };
 
     return (

@@ -54,8 +54,8 @@ export const KeepTouchWrapper = styled.div`
                 color:#fff;
 
             span {
-                color:#222;
-                font-weight:bold;
+                color:#000000;
+                /* font-weight:bold; */
                 cursor: pointer;
             }
         }

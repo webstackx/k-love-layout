@@ -20,6 +20,7 @@ export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 4rem;
 
     &__img {
       width: 40px;
@@ -53,7 +54,7 @@ export const HeaderWrapper = styled.div`
     &__searchDiv {
       position: absolute;
       top: 110%;
-      right: 22rem;
+      right: 10rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -96,5 +97,10 @@ export const HeaderWrapper = styled.div`
       margin-left: 1rem;
       cursor: pointer;
     }
+  }
+
+  .theme1Changes {
+    display: flex;
+    flex-direction: row;
   }
 `;

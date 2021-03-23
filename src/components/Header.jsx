@@ -29,35 +29,77 @@ export default function Header(props) {
   };
   return (
     <HeaderWrapper isBackground={props.isBackground}>
-      {/* <img /> */}
-      <div className="logo">
-        <img className="logo__img" src={klogo} alt="" />
-        <div className="logo__para">K-LOVE</div>
-      </div>
-      <div className="list">
-        {headerData.map((data, index) => {
-          return (
-            <div className="list__para" key={index}>
-              {data.name}
+      {window.location.href.includes("theme1") ? (
+        <React.Fragment>
+          <div className="theme1Changes">
+            <div className="logo">
+              <img className="logo__img" src={klogo} alt="" />
+              <div className="logo__para">K-LOVE</div>
             </div>
-          );
-        })}
-      </div>
-      <div className="inputCart">
-        {isSeacrh ? (
-          <div className="inputCart__searchDiv">
-            <input
-              className="inputCart__searchDiv--input"
-              placeholder="type anything . . ."
-            />
-            <button className="inputCart__searchDiv--button">Search</button>
+            <div className="list">
+              {headerData.map((data, index) => {
+                return (
+                  <div className="list__para" key={index}>
+                    {data.name}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        ) : (
-          ""
-        )}
-        <AiOutlineSearch className="inputCart__search" onClick={toggleSearch} />
-        <BiCartAlt className="inputCart__cart" />
-      </div>
+          <div className="inputCart">
+            {isSeacrh ? (
+              <div className="inputCart__searchDiv">
+                <input
+                  className="inputCart__searchDiv--input"
+                  placeholder="type anything . . ."
+                />
+                <button className="inputCart__searchDiv--button">Search</button>
+              </div>
+            ) : (
+              ""
+            )}
+            <AiOutlineSearch
+              className="inputCart__search"
+              onClick={toggleSearch}
+            />
+            <BiCartAlt className="inputCart__cart" />
+          </div>
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="logo">
+            <img className="logo__img" src={klogo} alt="" />
+            <div className="logo__para">K-LOVE</div>
+          </div>
+          <div className="list">
+            {headerData.map((data, index) => {
+              return (
+                <div className="list__para" key={index}>
+                  {data.name}
+                </div>
+              );
+            })}
+          </div>
+          <div className="inputCart">
+            {isSeacrh ? (
+              <div className="inputCart__searchDiv">
+                <input
+                  className="inputCart__searchDiv--input"
+                  placeholder="type anything . . ."
+                />
+                <button className="inputCart__searchDiv--button">Search</button>
+              </div>
+            ) : (
+              ""
+            )}
+            <AiOutlineSearch
+              className="inputCart__search"
+              onClick={toggleSearch}
+            />
+            <BiCartAlt className="inputCart__cart" />
+          </div>
+        </React.Fragment>
+      )}
     </HeaderWrapper>
   );
 }
