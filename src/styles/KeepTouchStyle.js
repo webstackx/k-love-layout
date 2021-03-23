@@ -59,6 +59,29 @@ export const KeepTouchWrapper = styled.div`
                 cursor: pointer;
             }
         }
+
+        &-StoreHead {
+            text-align:center;
+            font-size:1.2rem;
+            font-weight:550;
+            color:#fff;
+            margin-top:1.2rem;
+        }
+
+        &-StoreLink {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            margin-top:1.2rem;
+
+            img {
+                width: 150px;
+                height: 44px;
+                border-radius:5px;
+            }
+        }
+
         &-Links {
             display:flex;
             justify-content:space-between;
