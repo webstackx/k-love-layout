@@ -53,7 +53,7 @@ export const HeaderWrapper = styled.div`
     &__searchDiv {
       position: absolute;
       top: 110%;
-      right: 22rem;
+      right: 10rem;
       display: flex;
       flex-direction: row;
       align-items: center;

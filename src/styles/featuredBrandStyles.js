@@ -43,6 +43,7 @@ export const BrandWrapper = styled.div`
       height: auto;
       margin-bottom: 4rem;
       position: relative;
+      
       img {
         width: 17rem;
         height: 17rem;
@@ -52,6 +53,7 @@ export const BrandWrapper = styled.div`
         border-top-right-radius: 0.5rem;
         object-fit: cover;
         opacity: 0.9;
+        transition: all 0.8s;
         cursor: pointer;
         :hover {
           opacity: 1;
