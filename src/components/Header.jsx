@@ -8,16 +8,16 @@ export default function Header(props) {
   const [isSeacrh, handleSearch] = useState(false);
   const headerData = [
     {
-      name: "Categories",
+      name: "CATEGORIES",
     },
     {
-      name: "Home",
+      name: "HOME",
     },
     {
-      name: "Brands",
+      name: "BRANDS",
     },
     {
-      name: "Shop",
+      name: "SHOP",
     },
   ];
   const toggleSearch = () => {

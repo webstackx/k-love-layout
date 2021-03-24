@@ -23,9 +23,12 @@ export const HeaderWrapper = styled.div`
     padding-right: 4rem;
 
     &__img {
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       margin-right: 0.6rem;
+    }
+    &__para{
+      font-size:1.2rem;
     }
   }
 
