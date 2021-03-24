@@ -80,6 +80,7 @@ export const KeepTouchWrapper = styled.div`
                 height: 44px;
                 border-radius:5px;
                 cursor: pointer;
+                
             }
         }
 
