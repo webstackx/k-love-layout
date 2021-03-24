@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std";
+  src: url("./utils/ITCAvantGardeStdBk.otf");
+  font-style: normal;
+}
+
 .App {
   /* font-family: Circular Std Book; */
-  font-family: "ITC Avant Garde Gothic";
+  font-family: "ITC Avant Garde Gothic Std";
 }
 
 body {
